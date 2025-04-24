@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header.hero {
+    background: linear-gradient(to right, #222, #444);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header .highlight {
+    color: #00d4ff;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #00d4ff;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skills .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills span {
+    background-color: #e0f7fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.experience .exp-item {
+    margin-top: 20px;
+    border-left: 3px solid #00d4ff;
+    padding-left: 15px;
+}
+
+.contact .email {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0077b6;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    color: #666;
+    font-size: 14px;
+}
