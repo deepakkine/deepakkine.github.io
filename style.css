@@ -4,16 +4,29 @@
     box-sizing: border-box;
 }
 
+/* 🌙 Default Dark Mode */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #0f172a;
     color: #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+/* ☀️ Light Mode */
+body.light {
+    background-color: #f8fafc;
+    color: #0f172a;
 }
 
 /* Navbar */
 .navbar {
     background: #020617;
     padding: 15px 0;
+    transition: 0.3s;
+}
+
+body.light .navbar {
+    background: #e2e8f0;
 }
 
 .nav-container {
@@ -31,25 +44,47 @@ body {
 .nav-links a {
     color: #38bdf8;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0ea5e9;
+}
+
+/* 🌙 Toggle Button */
+.theme-toggle {
+    cursor: pointer;
+    background: #38bdf8;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 /* Hero */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to right, #020617, #1e293b);
+    background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+}
+
+body.light .hero {
+    background: linear-gradient(135deg, #e2e8f0, #f8fafc);
 }
 
 .highlight {
     color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
 }
 
+/* Social */
 .socials a {
     margin: 10px;
     color: #38bdf8;
     text-decoration: none;
 }
 
+/* Button */
 .cta {
     display: inline-block;
     margin-top: 20px;
@@ -58,6 +93,12 @@ body {
     color: #020617;
     border-radius: 25px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+    background: #0ea5e9;
 }
 
 /* Sections */
@@ -65,7 +106,12 @@ body {
     padding: 60px 20px;
     max-width: 900px;
     margin: auto;
+    border-bottom: 1px solid #1e293b;
     animation: fadeIn 1s ease;
+}
+
+body.light .section {
+    border-color: #cbd5f5;
 }
 
 h2 {
@@ -85,6 +131,16 @@ h2 {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.skill-grid span:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
+
+body.light .skill-grid span {
+    background: #e2e8f0;
 }
 
 /* Projects */
@@ -94,6 +150,10 @@ h2 {
     border-radius: 10px;
     margin-bottom: 25px;
     transition: 0.3s ease;
+}
+
+body.light .project {
+    background: #e2e8f0;
 }
 
 .project:hover {
@@ -129,6 +189,11 @@ footer {
     padding: 20px;
     background: #020617;
     color: #94a3b8;
+}
+
+body.light footer {
+    background: #e2e8f0;
+    color: #334155;
 }
 
 /* Animation */
