@@ -3,156 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Deepak Kine | DevOps Engineer</title>
+  <title>Dipak Kine | DevOps Engineer/Cloud Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #0f172a;
-      color: #f1f5f9;
-      line-height: 1.6;
-    }
-
-    .highlight {
-      color: #38bdf8;
-    }
-
-    header.hero {
-      background: linear-gradient(to right, #0f172a, #1e293b);
-      padding: 4rem 1rem;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: auto;
-    }
-
-    .cta {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #38bdf8;
-      color: #0f172a;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    .cta:hover {
-      background-color: #0ea5e9;
-    }
-
-    .section {
-      padding: 3rem 1rem;
-      border-top: 1px solid #1e293b;
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 1rem;
-    }
-
-    .skill-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 1rem;
-    }
-
-    .skill-grid span {
-      background: #1e293b;
-      padding: 0.75rem;
-      border-radius: 5px;
-      text-align: center;
-    }
-
-    .exp-item, .project {
-      margin-bottom: 1.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #1e293b;
-      color: #94a3b8;
-      font-size: 0.9rem;
-    }
-
-    a.email {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a.email:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
+
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h2 class="logo">Deepak</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#devops">DevOps</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
   <header class="hero">
     <div class="container">
-      <h1>👨‍💻 Hi, I'm <span class="highlight">Deepak Kine</span></h1>
-      <p>Automation Enthusiast • CI/CD • Cloud Native • Kubernetes Pro</p>
-      <a href="#contact" class="cta">Let's Connect</a>
+      <h1>👨‍💻 Hi, I'm <span class="highlight">Dipak Kine</span></h1>
+      <p>DevOps Engineer • CI/CD • Kubernetes • Docker • Cloud</p>
+
+      <div class="socials">
+        <a href="https://github.com/deepakkine" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/dipak-k-903a343b9/" target="_blank">LinkedIn</a>
+      </div>
+
+      <a href="Dipak_Kine.pdf" class="cta" download>Download Resume</a>
     </div>
   </header>
 
+  <!-- About -->
   <section class="section" id="about">
     <div class="container">
       <h2>🙋 About Me</h2>
-      <p>I’m a passionate DevOps Engineer who loves streamlining development lifecycles through automation, infrastructure as code, and modern deployment strategies. I'm all about building efficient, reliable, and scalable systems.</p>
+      <p>
+        DevOps Engineer with 3+ years of experience in CI/CD pipeline automation, cloud infrastructure management, and container orchestration.
+        Expertise in AWS services, Kubernetes deployment optimization, and infrastructure as code using Terraform. Successfully implemented monitoring 
+        solutions that reduced system downtime by 40% and automated 80% of deployment processes using GitHub Actions.
+      </p>
     </div>
   </section>
 
+  <!-- Skills -->
   <section class="section skills" id="skills">
     <div class="container">
-      <h2>🚀 My Tech Stack</h2>
+      <h2>🚀 Tech Stack</h2>
       <div class="skill-grid">
-        <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>GitHub Actions</span><span>SonarQube</span>
-        <span>Jenkins</span><span>Ansible</span><span>Bash</span><span>Linux</span><span>AWS</span><span>Azure</span><span>Keycloak</span>
-        <span>PostgreSQL</span><span>Git</span><span>GitHub</span><span>Maven</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>Terraform</span>
+        <span>GitHub Actions</span>
+        <span>Jenkins</span>
+        <span>Ansible</span>
+        <span>AWS</span>
+        <span>Linux</span>
+        <span>Bash</span>
+        <span>Prometheus</span>
+        <span>Grafana</span>
+        <span>Git</span>
       </div>
     </div>
   </section>
 
-  <section class="section experience" id="experience">
-    <div class="container">
-      <h2>📂 Experience</h2>
-      <div class="exp-item">
-        <h3>DevOps Engineer @ Geminustech</h3>
-        <p>Designed and implemented CI/CD pipelines with GitHub Actions & Terraform for multi-region AWS deployment. Migrated legacy systems to cloud-native architecture and introduced GitOps practices.</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- Projects -->
   <section class="section projects" id="projects">
     <div class="container">
       <h2>🛠️ Projects</h2>
+
+      <!-- Project 1 -->
       <div class="project">
-        <h3>K8s Self-Healing Cluster</h3>
-        <p>Built a Kubernetes cluster with custom probes and failover strategies to ensure high availability and self-healing infrastructure.</p>
+        <h3>🚀 APIX (APISecurist)</h3>
+        <p>
+          Designed and deployed a cloud-native application using Docker and Kubernetes, ensuring scalability,
+          high availability, and secure API management.
+        </p>
+
+        <ul>
+          <li>Docker & Docker Compose environments</li>
+          <li>Kubernetes deployment (Minikube & AWS EKS)</li>
+          <li>CI/CD using Jenkins & GitHub Actions</li>
+          <li>Security scans with Trivy & SonarQube</li>
+          <li>Ingress NGINX for routing & load balancing</li>
+          <li>Monitoring with Prometheus & Grafana</li>
+          <li>Infrastructure automation (Terraform & Ansible)</li>
+          <li>AWS services: EC2, S3, VPC, IAM, RDS, EKS</li>
+        </ul>
+
+        <a href="https://github.com/deepakkine/Jenkins" target="_blank">🔗 View Project</a>
       </div>
+
+      <!-- Project 2 -->
       <div class="project">
-        <h3>CI/CD for Chrome Extension</h3>
-        <p>Automated testing and deployment of a Chrome Extension using GitHub Actions, integrating secrets management and marketplace publishing.</p>
+        <h3>☁️ AWS Three-Tier Architecture</h3>
+        <p>
+          Designed and implemented a highly available and scalable three-tier architecture on AWS.
+        </p>
+
+        <ul>
+          <li>EC2 + Auto Scaling Groups for scalability</li>
+          <li>RDS for managed database</li>
+          <li>Elastic Load Balancer for traffic distribution</li>
+          <li>VPC for network isolation</li>
+          <li>IAM, Security Groups & NACLs for security</li>
+        </ul>
+
+        <a href="https://github.com/deepakkine/Jenkins" target="_blank">🔗 View Project</a>
       </div>
+
     </div>
   </section>
 
+  <!-- DevOps Workflow -->
+  <section class="section" id="devops">
+    <div class="container">
+      <h2>⚙️ DevOps Workflow</h2>
+      <p>
+        End-to-end CI/CD pipeline: GitHub → Jenkins → Docker → Kubernetes deployment.
+        Integrated monitoring using Prometheus and Grafana for observability.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section class="section contact" id="contact">
     <div class="container">
-      <h2>📬 Contact Me</h2>
-      <p>Let’s collaborate, share ideas, or just talk tech. You can reach me anytime here:</p>
-      <a href="mailto:kinedeepak@outlook.com" class="email">kinedeepak@outlook.com</a>
+      <h2>📬 Contact</h2>
+      <p>Email me for collaboration or opportunities:</p>
+      <a href="mailto:kinedipak97@gmail.com" class="email">kinedipak97@gmail.com</a>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Deepak Kine. Built with ❤ YAML & Linux terminals.</p>
+    <p>© 2026 Dipak Kine | Built with DevOps ❤️</p>
   </footer>
+
 </body>
 </html>
