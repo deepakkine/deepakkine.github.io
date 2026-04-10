@@ -6,71 +6,133 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
-    line-height: 1.6;
+    background-color: #0f172a;
+    color: #f1f5f9;
 }
 
-header.hero {
-    background: linear-gradient(to right, #222, #444);
-    color: #fff;
-    padding: 80px 20px;
+/* Navbar */
+.navbar {
+    background: #020617;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
     text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #020617, #1e293b);
 }
 
-header .highlight {
-    color: #00d4ff;
+.highlight {
+    color: #38bdf8;
+}
+
+.socials a {
+    margin: 10px;
+    color: #38bdf8;
+    text-decoration: none;
 }
 
 .cta {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 25px;
-    background-color: #00d4ff;
-    color: #000;
-    border-radius: 30px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 25px;
     text-decoration: none;
-    font-weight: bold;
 }
 
+/* Sections */
 .section {
     padding: 60px 20px;
     max-width: 900px;
     margin: auto;
+    animation: fadeIn 1s ease;
 }
 
-.skills .skill-grid {
+h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 15px;
-    margin-top: 20px;
 }
 
-.skills span {
-    background-color: #e0f7fa;
-    padding: 10px 15px;
-    border-radius: 8px;
+.skill-grid span {
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 5px;
     text-align: center;
-    font-weight: 500;
 }
 
-.experience .exp-item {
-    margin-top: 20px;
-    border-left: 3px solid #00d4ff;
-    padding-left: 15px;
+/* Projects */
+.project {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
 }
 
-.contact .email {
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.project ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.project li {
+    margin-bottom: 5px;
+}
+
+.project a {
     display: inline-block;
-    margin-top: 15px;
-    color: #0077b6;
+    margin-top: 10px;
+    color: #38bdf8;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Contact */
+.email {
+    color: #38bdf8;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #eee;
-    color: #666;
-    font-size: 14px;
+    background: #020617;
+    color: #94a3b8;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
