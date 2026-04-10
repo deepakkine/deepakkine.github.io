@@ -12,7 +12,8 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container nav-container">
-      <h2 class="logo">Deepak</h2>
+      <h2 class="logo">Dipak</h2>
+
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -20,6 +21,9 @@
         <li><a href="#devops">DevOps</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <!-- 🌙 Toggle Button -->
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
     </div>
   </nav>
 
@@ -43,9 +47,10 @@
     <div class="container">
       <h2>🙋 About Me</h2>
       <p>
-        DevOps Engineer with 3+ years of experience in CI/CD pipeline automation, cloud infrastructure management, and container orchestration.
-        Expertise in AWS services, Kubernetes deployment optimization, and infrastructure as code using Terraform. Successfully implemented monitoring 
-        solutions that reduced system downtime by 40% and automated 80% of deployment processes using GitHub Actions.
+        DevOps Engineer with 3+ years of experience in CI/CD pipeline automation, cloud infrastructure management, 
+        and container orchestration. Expertise in AWS services, Kubernetes deployment optimization, and infrastructure 
+        as code using Terraform. Successfully implemented monitoring solutions that reduced system downtime by 40% 
+        and automated 80% of deployment processes using GitHub Actions.
       </p>
     </div>
   </section>
@@ -95,7 +100,7 @@
           <li>AWS services: EC2, S3, VPC, IAM, RDS, EKS</li>
         </ul>
 
-        <a href="https://github.com/deepakkine/Jenkins" target="_blank">🔗 View Project</a>
+        <a href="https://github.com/deepakkine" target="_blank">🔗 View Project</a>
       </div>
 
       <!-- Project 2 -->
@@ -113,7 +118,7 @@
           <li>IAM, Security Groups & NACLs for security</li>
         </ul>
 
-        <a href="https://github.com/deepakkine/Jenkins" target="_blank">🔗 View Project</a>
+        <a href="https://github.com/deepakkine" target="_blank">🔗 View Project</a>
       </div>
 
     </div>
@@ -143,6 +148,13 @@
   <footer>
     <p>© 2026 Dipak Kine | Built with DevOps ❤️</p>
   </footer>
+
+  <!-- 🌙 Toggle Script -->
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+  </script>
 
 </body>
 </html>
