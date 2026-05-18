@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dipak Kine | DevOps Engineer/Cloud Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dipak Kine | DevOps Engineer</title>
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Dipak Kine - DevOps Engineer Portfolio. AWS, Kubernetes, Docker, Terraform, CI/CD, GitHub Actions & Cloud Projects.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png"
+    href="https://cdn-icons-png.flaticon.com/512/919/919853.png">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Typed JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 
 <body>
@@ -12,136 +32,256 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container nav-container">
+
       <h2 class="logo">Dipak</h2>
 
-      <ul class="nav-links">
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#devops">DevOps</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#github">GitHub</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <!-- 🌙 Toggle Button -->
-      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        🌙
+      </button>
+
     </div>
   </nav>
 
   <!-- Hero -->
   <header class="hero">
+
     <div class="container">
-      <h1>👨‍💻 Hi, I'm <span class="highlight">Dipak Kine</span></h1>
-      <p>DevOps Engineer • CI/CD • Kubernetes • Docker • Cloud</p>
+
+      <h1>
+        👨‍💻 Hi, I'm
+        <span class="highlight">Dipak Kine</span>
+      </h1>
+
+      <p>
+        <span id="typing"></span>
+      </p>
 
       <div class="socials">
-        <a href="https://github.com/deepakkine" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/dipak-k-903a343b9/" target="_blank">LinkedIn</a>
+
+        <a href="https://github.com/deepakkine" target="_blank">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/dipak-k-903a343b9/"
+          target="_blank">
+          LinkedIn
+        </a>
+
       </div>
 
-      <a href="./Dipak_Kine_DevOps_Engineer.pdf" class="cta" download>Download Resume</a>
+      <a href="./Dipak_Kine_DevOps_Engineer.pdf"
+        class="cta"
+        download>
+        Download Resume
+      </a>
+
     </div>
+
   </header>
 
   <!-- About -->
   <section class="section" id="about">
+
     <div class="container">
+
       <h2>🙋 About Me</h2>
+
       <p>
-        DevOps Engineer with 3+ years of experience in CI/CD pipeline automation, cloud infrastructure management, 
-        and container orchestration. Expertise in AWS services, Kubernetes deployment optimization, and infrastructure 
-        as code using Terraform. Successfully implemented monitoring solutions that reduced system downtime by 40% 
-        and automated 80% of deployment processes using GitHub Actions.
+        DevOps Engineer with 3+ years of experience in CI/CD pipeline automation,
+        cloud infrastructure management, container orchestration, and AWS cloud
+        services. Skilled in Kubernetes, Terraform, Docker, GitHub Actions,
+        Jenkins, Linux, Prometheus, and Grafana.
       </p>
+
     </div>
+
   </section>
 
   <!-- Skills -->
-  <section class="section skills" id="skills">
+  <section class="section" id="skills">
+
     <div class="container">
+
       <h2>🚀 Tech Stack</h2>
+
       <div class="skill-grid">
-        <span>Docker</span>
-        <span>Kubernetes</span>
-        <span>Terraform</span>
-        <span>GitHub Actions</span>
-        <span>Jenkins</span>
-        <span>Ansible</span>
-        <span>AWS</span>
-        <span>Linux</span>
-        <span>Bash</span>
-        <span>Prometheus</span>
-        <span>Grafana</span>
-        <span>Git</span>
+
+        <div class="skill-card">
+          <i class="fab fa-docker"></i>
+          <span>Docker</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-dharmachakra"></i>
+          <span>Kubernetes</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-aws"></i>
+          <span>AWS</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-code-branch"></i>
+          <span>Terraform</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-github"></i>
+          <span>GitHub Actions</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-jenkins"></i>
+          <span>Jenkins</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-linux"></i>
+          <span>Linux</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-chart-line"></i>
+          <span>Grafana</span>
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- Projects -->
-  <section class="section projects" id="projects">
+  <section class="section" id="projects">
+
     <div class="container">
+
       <h2>🛠️ Projects</h2>
 
-      <!-- Project 1 -->
       <div class="project">
+
         <h3>🚀 APIX (APISecurist)</h3>
+
         <p>
-          Designed and deployed a cloud-native application using Docker and Kubernetes, ensuring scalability,
-          high availability, and secure API management.
+          Cloud-native Kubernetes deployment with CI/CD, monitoring,
+          security scanning, and AWS integration.
         </p>
 
         <ul>
-          <li>Docker & Docker Compose environments</li>
-          <li>Kubernetes deployment (Minikube & AWS EKS)</li>
-          <li>CI/CD using Jenkins & GitHub Actions</li>
-          <li>Security scans with Trivy & SonarQube</li>
-          <li>Ingress NGINX for routing & load balancing</li>
-          <li>Monitoring with Prometheus & Grafana</li>
-          <li>Infrastructure automation (Terraform & Ansible)</li>
-          <li>AWS services: EC2, S3, VPC, IAM, RDS, EKS</li>
+          <li>Docker & Kubernetes</li>
+          <li>GitHub Actions CI/CD</li>
+          <li>Terraform & Ansible</li>
+          <li>Prometheus & Grafana</li>
+          <li>Trivy & SonarQube</li>
         </ul>
 
-        <a href="https://github.com/deepakkine" target="_blank">🔗 View Project</a>
+        <a href="https://github.com/deepakkine" target="_blank">
+          🔗 GitHub Repo
+        </a>
+
       </div>
 
-      <!-- Project 2 -->
       <div class="project">
+
         <h3>☁️ AWS Three-Tier Architecture</h3>
+
         <p>
-          Designed and implemented a highly available and scalable three-tier architecture on AWS.
+          Highly available AWS architecture using EC2, ASG, RDS, ALB, and VPC.
         </p>
 
-        <ul>
-          <li>EC2 + Auto Scaling Groups for scalability</li>
-          <li>RDS for managed database</li>
-          <li>Elastic Load Balancer for traffic distribution</li>
-          <li>VPC for network isolation</li>
-          <li>IAM, Security Groups & NACLs for security</li>
-        </ul>
+        <a href="https://github.com/deepakkine" target="_blank">
+          🔗 GitHub Repo
+        </a>
 
-        <a href="https://github.com/deepakkine" target="_blank">🔗 View Project</a>
       </div>
 
     </div>
+
   </section>
 
-  <!-- DevOps Workflow -->
-  <section class="section" id="devops">
+  <!-- Certifications -->
+  <section class="section" id="certifications">
+
     <div class="container">
-      <h2>⚙️ DevOps Workflow</h2>
-      <p>
-        End-to-end CI/CD pipeline: GitHub → Jenkins → Docker → Kubernetes deployment.
-        Integrated monitoring using Prometheus and Grafana for observability.
-      </p>
+
+      <h2>🏆 Certifications</h2>
+
+      <div class="project">
+
+        <h3>AWS Cloud Practitioner</h3>
+        <p>Amazon Web Services</p>
+
+      </div>
+
+      <div class="project">
+
+        <h3>DevOps with AWS & Kubernetes</h3>
+        <p>Hands-on Docker, Kubernetes, Terraform & CI/CD</p>
+
+      </div>
+
     </div>
+
+  </section>
+
+  <!-- GitHub -->
+  <section class="section" id="github">
+
+    <div class="container">
+
+      <h2>📊 GitHub Analytics</h2>
+
+      <img
+        src="https://github-readme-stats.vercel.app/api?username=deepakkine&show_icons=true&theme=tokyonight"
+        width="48%">
+
+      <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=deepakkine&layout=compact&theme=tokyonight"
+        width="48%">
+
+      <br><br>
+
+      <h2>🐍 Contribution Snake</h2>
+
+      <img
+        src="https://raw.githubusercontent.com/deepakkine/deepakkine/output/github-contribution-grid-snake-dark.svg"
+        width="100%">
+
+    </div>
+
   </section>
 
   <!-- Contact -->
-  <section class="section contact" id="contact">
+  <section class="section" id="contact">
+
     <div class="container">
+
       <h2>📬 Contact</h2>
+
       <p>Email me for collaboration or opportunities:</p>
-      <a href="mailto:kinedipak97@gmail.com" class="email">kinedipak97@gmail.com</a>
+
+      <a href="mailto:kinedipak97@gmail.com"
+        class="email">
+        kinedipak97@gmail.com
+      </a>
+
     </div>
+
   </section>
 
   <!-- Footer -->
@@ -149,12 +289,49 @@
     <p>© 2026 Dipak Kine | Built with DevOps ❤️</p>
   </footer>
 
-  <!-- 🌙 Toggle Script -->
+  <!-- Scripts -->
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle("light");
+
+    // Theme Persistence
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "light") {
+      document.body.classList.add("light");
     }
+
+    function toggleTheme() {
+
+      document.body.classList.toggle("light");
+
+      if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+      } else {
+        localStorage.setItem("theme", "dark");
+      }
+
+    }
+
+    // Typing Animation
+    var typed = new Typed("#typing", {
+      strings: [
+        "DevOps Engineer",
+        "AWS Cloud Engineer",
+        "Kubernetes Enthusiast",
+        "CI/CD Automation Expert",
+        "Docker & Terraform Specialist"
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+
+    // Mobile Menu
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+
   </script>
 
 </body>
+
 </html>
