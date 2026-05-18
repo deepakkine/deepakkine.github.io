@@ -1,8 +1,13 @@
+```css id="n8v4qx"
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ========================= */
+/* Global */
+/* ========================= */
 
 html {
     scroll-behavior: smooth;
@@ -13,6 +18,7 @@ body {
     background-color: #0f172a;
     color: #f1f5f9;
     transition: all 0.3s ease;
+    line-height: 1.7;
 }
 
 body.light {
@@ -20,23 +26,32 @@ body.light {
     color: #0f172a;
 }
 
+/* ========================= */
+/* Container */
+/* ========================= */
+
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
 
+/* ========================= */
+/* Navbar */
+/* ========================= */
+
 .navbar {
-    background: #020617;
+    background: rgba(2, 6, 23, 0.95);
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 999;
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1e293b;
 }
 
 body.light .navbar {
-    background: #e2e8f0;
+    background: rgba(226, 232, 240, 0.95);
 }
 
 .nav-container {
@@ -53,7 +68,7 @@ body.light .navbar {
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 22px;
     list-style: none;
 }
 
@@ -68,13 +83,27 @@ body.light .navbar {
     color: #0ea5e9;
 }
 
+/* ========================= */
+/* Theme Toggle */
+/* ========================= */
+
 .theme-toggle {
     cursor: pointer;
     background: #38bdf8;
     border: none;
     padding: 8px 14px;
     border-radius: 30px;
+    transition: 0.3s ease;
+    font-size: 15px;
 }
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* Hamburger */
+/* ========================= */
 
 .hamburger {
     display: none;
@@ -82,6 +111,10 @@ body.light .navbar {
     cursor: pointer;
     color: #38bdf8;
 }
+
+/* ========================= */
+/* Hero */
+/* ========================= */
 
 .hero {
     text-align: center;
@@ -94,7 +127,8 @@ body.light .hero {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
@@ -107,8 +141,12 @@ body.light .hero {
     text-shadow: 0 0 15px #38bdf8;
 }
 
+/* ========================= */
+/* Terminal */
+/* ========================= */
+
 .terminal {
-    margin-top: 30px;
+    margin-top: 35px;
     background: #111827;
     padding: 25px;
     border-radius: 16px;
@@ -116,6 +154,7 @@ body.light .hero {
     max-width: 700px;
     margin-inline: auto;
     font-family: monospace;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
 }
 
 body.light .terminal {
@@ -135,8 +174,12 @@ body.light .terminal {
     font-weight: bold;
 }
 
+/* ========================= */
+/* Social Links */
+/* ========================= */
+
 .socials {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .socials a {
@@ -144,32 +187,78 @@ body.light .terminal {
     color: #38bdf8;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s ease;
 }
+
+.socials a:hover {
+    color: #0ea5e9;
+}
+
+/* ========================= */
+/* Pipeline Badge */
+/* ========================= */
 
 .pipeline-badge {
     margin-top: 25px;
 }
 
+/* ========================= */
+/* CTA Button */
+/* ========================= */
+
 .cta {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 14px 30px;
     background: #38bdf8;
     color: #020617;
     border-radius: 30px;
     text-decoration: none;
+    transition: 0.3s ease;
     font-weight: bold;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
+
+.cta:hover {
+    transform: translateY(-3px);
+    background: #0ea5e9;
+}
+
+/* Secondary Button */
+
+.secondary-btn {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.secondary-btn:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* ========================= */
+/* Sections */
+/* ========================= */
 
 .section {
     padding: 80px 20px;
     border-bottom: 1px solid #1e293b;
 }
 
+body.light .section {
+    border-color: #cbd5e1;
+}
+
 h2 {
     color: #38bdf8;
     margin-bottom: 30px;
+    font-size: 2rem;
 }
+
+/* ========================= */
+/* Skills */
+/* ========================= */
 
 .skill-grid {
     display: grid;
@@ -182,10 +271,16 @@ h2 {
     padding: 30px 20px;
     border-radius: 16px;
     text-align: center;
+    transition: 0.3s ease;
 }
 
 body.light .skill-card {
     background: #e2e8f0;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .skill-card i {
@@ -194,6 +289,15 @@ body.light .skill-card {
     color: #38bdf8;
 }
 
+.skill-card span {
+    display: block;
+    font-weight: 600;
+}
+
+/* ========================= */
+/* DevOps Badges */
+/* ========================= */
+
 .badges {
     display: flex;
     flex-wrap: wrap;
@@ -201,21 +305,51 @@ body.light .skill-card {
     justify-content: center;
 }
 
+.badges img {
+    transition: 0.3s ease;
+}
+
+.badges img:hover {
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* Projects */
+/* ========================= */
+
 .project {
     background: #1e293b;
     padding: 25px;
     border-radius: 16px;
     margin-bottom: 25px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 body.light .project {
     background: #e2e8f0;
 }
 
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    margin-bottom: 15px;
+}
+
 .project ul {
     padding-left: 20px;
     margin-top: 10px;
 }
+
+.project li {
+    margin-bottom: 8px;
+}
+
+/* ========================= */
+/* GitHub Stats */
+/* ========================= */
 
 .stats {
     display: flex;
@@ -227,40 +361,101 @@ body.light .project {
 .stats img {
     width: 48%;
     border-radius: 16px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
+
+.stats img:hover {
+    transform: translateY(-5px);
+}
+
+/* ========================= */
+/* Contribution Snake */
+/* ========================= */
 
 .snake {
     margin-top: 30px;
     background: #1e293b;
     padding: 20px;
     border-radius: 16px;
+    overflow-x: auto;
+}
+
+body.light .snake {
+    background: #e2e8f0;
 }
 
 .snake img {
     width: 100%;
+    border-radius: 12px;
 }
+
+/* ========================= */
+/* Resume Section */
+/* ========================= */
 
 .resume-card {
     background: #1e293b;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
-.resume-card iframe {
-    border: none;
-    border-radius: 12px;
+body.light .resume-card {
+    background: #e2e8f0;
 }
+
+.resume-card p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+}
+
+body.light .resume-card p {
+    color: #334155;
+}
+
+.resume-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ========================= */
+/* Email */
+/* ========================= */
 
 .email {
     color: #38bdf8;
     text-decoration: none;
+    font-weight: bold;
 }
+
+.email:hover {
+    color: #0ea5e9;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
 
 footer {
     text-align: center;
     padding: 25px;
     background: #020617;
+    color: #94a3b8;
 }
+
+body.light footer {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+/* ========================= */
+/* Mobile Responsive */
+/* ========================= */
 
 @media(max-width:768px) {
 
@@ -277,10 +472,29 @@ footer {
         background: #020617;
         padding: 20px;
         border-radius: 12px;
+        width: 220px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    body.light .nav-links {
+        background: #e2e8f0;
     }
 
     .nav-links.show {
         display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .terminal {
+        font-size: 14px;
+        padding: 20px;
     }
 
     .stats {
@@ -289,6 +503,16 @@ footer {
 
     .stats img {
         width: 100%;
+    }
+
+    .badges img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .resume-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
