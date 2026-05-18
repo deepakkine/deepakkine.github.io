@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-/* ========================= */
-/* Global */
-/* ========================= */
-
 html {
     scroll-behavior: smooth;
 }
@@ -24,19 +20,11 @@ body.light {
     color: #0f172a;
 }
 
-/* ========================= */
-/* Container */
-/* ========================= */
-
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
-
-/* ========================= */
-/* Navbar */
-/* ========================= */
 
 .navbar {
     background: #020617;
@@ -80,27 +68,13 @@ body.light .navbar {
     color: #0ea5e9;
 }
 
-/* ========================= */
-/* Theme Toggle */
-/* ========================= */
-
 .theme-toggle {
     cursor: pointer;
     background: #38bdf8;
     border: none;
     padding: 8px 14px;
     border-radius: 30px;
-    font-size: 16px;
-    transition: 0.3s ease;
 }
-
-.theme-toggle:hover {
-    transform: scale(1.05);
-}
-
-/* ========================= */
-/* Hamburger */
-/* ========================= */
 
 .hamburger {
     display: none;
@@ -108,10 +82,6 @@ body.light .navbar {
     cursor: pointer;
     color: #38bdf8;
 }
-
-/* ========================= */
-/* Hero */
-/* ========================= */
 
 .hero {
     text-align: center;
@@ -124,18 +94,12 @@ body.light .hero {
 }
 
 .hero h1 {
-    font-size: 3.2rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
 }
 
 .hero p {
     margin-top: 10px;
-    font-size: 1.3rem;
-    color: #cbd5e1;
-}
-
-body.light .hero p {
-    color: #334155;
+    font-size: 1.2rem;
 }
 
 .highlight {
@@ -143,9 +107,33 @@ body.light .hero p {
     text-shadow: 0 0 15px #38bdf8;
 }
 
-/* ========================= */
-/* Social Links */
-/* ========================= */
+.terminal {
+    margin-top: 30px;
+    background: #111827;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: left;
+    max-width: 700px;
+    margin-inline: auto;
+    font-family: monospace;
+}
+
+body.light .terminal {
+    background: #e2e8f0;
+}
+
+.terminal p {
+    margin-bottom: 10px;
+}
+
+.green {
+    color: #22c55e;
+}
+
+.open {
+    color: #38bdf8;
+    font-weight: bold;
+}
 
 .socials {
     margin-top: 25px;
@@ -156,16 +144,11 @@ body.light .hero p {
     color: #38bdf8;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s ease;
 }
 
-.socials a:hover {
-    color: #0ea5e9;
+.pipeline-badge {
+    margin-top: 25px;
 }
-
-/* ========================= */
-/* CTA Button */
-/* ========================= */
 
 .cta {
     display: inline-block;
@@ -175,38 +158,18 @@ body.light .hero p {
     color: #020617;
     border-radius: 30px;
     text-decoration: none;
-    transition: 0.3s ease;
     font-weight: bold;
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
-
-.cta:hover {
-    transform: scale(1.05);
-    background: #0ea5e9;
-}
-
-/* ========================= */
-/* Sections */
-/* ========================= */
 
 .section {
     padding: 80px 20px;
     border-bottom: 1px solid #1e293b;
 }
 
-body.light .section {
-    border-color: #cbd5e1;
-}
-
 h2 {
     color: #38bdf8;
     margin-bottom: 30px;
-    font-size: 2rem;
 }
-
-/* ========================= */
-/* Skills */
-/* ========================= */
 
 .skill-grid {
     display: grid;
@@ -219,16 +182,10 @@ h2 {
     padding: 30px 20px;
     border-radius: 16px;
     text-align: center;
-    transition: 0.3s ease;
 }
 
 body.light .skill-card {
     background: #e2e8f0;
-}
-
-.skill-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .skill-card i {
@@ -237,39 +194,22 @@ body.light .skill-card {
     color: #38bdf8;
 }
 
-.skill-card span {
-    display: block;
-    font-weight: 600;
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
-
-/* ========================= */
-/* Projects */
-/* ========================= */
 
 .project {
     background: #1e293b;
     padding: 25px;
     border-radius: 16px;
     margin-bottom: 25px;
-    transition: 0.3s ease;
 }
 
 body.light .project {
     background: #e2e8f0;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
-
-.project h3 {
-    margin-bottom: 15px;
-}
-
-.project p {
-    margin-bottom: 15px;
-    line-height: 1.7;
 }
 
 .project ul {
@@ -277,100 +217,50 @@ body.light .project {
     margin-top: 10px;
 }
 
-.project li {
-    margin-bottom: 8px;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project a:hover {
-    color: #0ea5e9;
-}
-
-/* ========================= */
-/* GitHub Stats */
-/* ========================= */
-
 .stats {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px;
 }
 
 .stats img {
     width: 48%;
     border-radius: 16px;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
-
-.stats img:hover {
-    transform: translateY(-5px);
-}
-
-/* ========================= */
-/* Contribution Snake */
-/* ========================= */
 
 .snake {
     margin-top: 30px;
     background: #1e293b;
     padding: 20px;
     border-radius: 16px;
-    overflow-x: auto;
-}
-
-body.light .snake {
-    background: #e2e8f0;
 }
 
 .snake img {
     width: 100%;
-    border-radius: 10px;
 }
 
-/* ========================= */
-/* Contact */
-/* ========================= */
+.resume-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.resume-card iframe {
+    border: none;
+    border-radius: 12px;
+}
 
 .email {
     color: #38bdf8;
     text-decoration: none;
-    font-weight: bold;
 }
-
-.email:hover {
-    color: #0ea5e9;
-}
-
-/* ========================= */
-/* Footer */
-/* ========================= */
 
 footer {
     text-align: center;
     padding: 25px;
     background: #020617;
-    color: #94a3b8;
 }
-
-body.light footer {
-    background: #e2e8f0;
-    color: #334155;
-}
-
-/* ========================= */
-/* Mobile Responsive */
-/* ========================= */
 
 @media(max-width:768px) {
 
@@ -387,23 +277,10 @@ body.light footer {
         background: #020617;
         padding: 20px;
         border-radius: 12px;
-        width: 200px;
-    }
-
-    body.light .nav-links {
-        background: #e2e8f0;
     }
 
     .nav-links.show {
         display: flex;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
     }
 
     .stats {
