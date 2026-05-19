@@ -1,4 +1,3 @@
-```css id="n8v4qx"
 * {
     margin: 0;
     padding: 0;
@@ -60,11 +59,28 @@ body.light .navbar {
     align-items: center;
 }
 
+/* ========================= */
+/* Logo */
+/* ========================= */
+
 .logo {
-    color: #38bdf8;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 800;
+    color: #38bdf8;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: monospace;
 }
+
+.logo:hover {
+    text-shadow: 0 0 15px #38bdf8;
+    transform: scale(1.03);
+}
+
+/* ========================= */
+/* Nav Links */
+/* ========================= */
 
 .nav-links {
     display: flex;
@@ -77,6 +93,22 @@ body.light .navbar {
     text-decoration: none;
     transition: 0.3s ease;
     font-weight: 500;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-links a:hover {
@@ -95,6 +127,8 @@ body.light .navbar {
     border-radius: 30px;
     transition: 0.3s ease;
     font-size: 15px;
+    color: #020617;
+    font-weight: bold;
 }
 
 .theme-toggle:hover {
@@ -155,6 +189,7 @@ body.light .hero {
     margin-inline: auto;
     font-family: monospace;
     box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    border: 1px solid #1e293b;
 }
 
 body.light .terminal {
@@ -192,6 +227,7 @@ body.light .terminal {
 
 .socials a:hover {
     color: #0ea5e9;
+    text-shadow: 0 0 10px #38bdf8;
 }
 
 /* ========================= */
@@ -223,8 +259,6 @@ body.light .terminal {
     transform: translateY(-3px);
     background: #0ea5e9;
 }
-
-/* Secondary Button */
 
 .secondary-btn {
     background: transparent;
@@ -272,6 +306,7 @@ h2 {
     border-radius: 16px;
     text-align: center;
     transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 body.light .skill-card {
@@ -280,7 +315,7 @@ body.light .skill-card {
 
 .skill-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 25px rgba(56,189,248,0.2);
 }
 
 .skill-card i {
@@ -336,6 +371,7 @@ body.light .project {
 
 .project h3 {
     margin-bottom: 15px;
+    color: #38bdf8;
 }
 
 .project ul {
@@ -431,6 +467,7 @@ body.light .resume-card p {
     color: #38bdf8;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .email:hover {
