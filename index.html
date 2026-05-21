@@ -236,45 +236,92 @@
 
   </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
+<!-- Projects -->
+<section class="section" id="projects">
 
-    <div class="container">
+  <div class="container">
 
-      <h2>🛠️ Projects</h2>
+    <h2>🛠️ Projects</h2>
 
-      <div class="project">
+    <div class="project featured-project">
 
-        <h3>🚀 APIX (APISecurist)</h3>
+      <h3>🏗️ AWS Infrastructure Automation with Terraform and Jenkins</h3>
 
-        <p>
-          Cloud-native Kubernetes deployment with CI/CD, monitoring,
-          security scanning, and AWS integration.
-        </p>
+      <p>
+        Automated AWS infrastructure provisioning using Terraform and Jenkins.
+        Jenkins pulls code from GitHub, runs Terraform validation, creates an
+        execution plan, applies infrastructure changes, and uses an S3 backend
+        for remote Terraform state.
+      </p>
 
-        <ul>
-          <li>Docker & Kubernetes</li>
-          <li>GitHub Actions CI/CD</li>
-          <li>Terraform & Ansible</li>
-          <li>Prometheus & Grafana</li>
-          <li>Trivy & SonarQube</li>
-        </ul>
+      <ul>
+        <li>Provisioned AWS resources using Terraform modules</li>
+        <li>Configured S3 remote backend for Terraform state management</li>
+        <li>Built Jenkins deploy and destroy pipelines</li>
+        <li>Created VPC, EC2, S3, route tables, and internet gateway</li>
+        <li>Optimized dev infrastructure to reduce AWS cost</li>
+      </ul>
 
+      <div class="project-tags">
+        <span>AWS</span>
+        <span>Terraform</span>
+        <span>Jenkins</span>
+        <span>GitHub</span>
+        <span>S3 Backend</span>
+        <span>EC2</span>
+        <span>VPC</span>
       </div>
 
-      <div class="project">
+      <div class="project-links">
+        <a
+          href="https://github.com/deepakkine/aws-terraform-jenkins-infra"
+          target="_blank"
+          class="project-btn">
+          View Code
+        </a>
 
-        <h3>☁️ AWS Three-Tier Architecture</h3>
-
-        <p>
-          Highly available AWS architecture using EC2, ASG, RDS, ALB, and VPC.
-        </p>
-
+        <a
+          href="https://github.com/deepakkine/aws-terraform-jenkins-infra/blob/dev/README.md"
+          target="_blank"
+          class="project-btn secondary-project-btn">
+          Case Study
+        </a>
       </div>
 
     </div>
 
-  </section>
+    <div class="project">
+
+      <h3>🚀 APIX (APISecurist)</h3>
+
+      <p>
+        Cloud-native Kubernetes deployment with CI/CD, monitoring,
+        security scanning, and AWS integration.
+      </p>
+
+      <ul>
+        <li>Docker & Kubernetes</li>
+        <li>GitHub Actions CI/CD</li>
+        <li>Terraform & Ansible</li>
+        <li>Prometheus & Grafana</li>
+        <li>Trivy & SonarQube</li>
+      </ul>
+
+    </div>
+
+    <div class="project">
+
+      <h3>☁️ AWS Three-Tier Architecture</h3>
+
+      <p>
+        Highly available AWS architecture using EC2, ASG, RDS, ALB, and VPC.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
   <!-- Security -->
   <section class="section" id="security">
