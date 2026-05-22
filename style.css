@@ -231,14 +231,6 @@ body.light .terminal {
 }
 
 /* ========================= */
-/* Pipeline Badge */
-/* ========================= */
-
-.pipeline-badge {
-    margin-top: 25px;
-}
-
-/* ========================= */
 /* CTA Button */
 /* ========================= */
 
@@ -330,89 +322,136 @@ body.light .skill-card {
 }
 
 /* ========================= */
-/* DevOps Badges */
-/* ========================= */
-
-.badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.badges img {
-    transition: 0.3s ease;
-}
-
-.badges img:hover {
-    transform: scale(1.05);
-}
-
-/* ========================= */
 /* Projects */
 /* ========================= */
 
 .project {
     background: #1e293b;
-    padding: 25px;
-    border-radius: 16px;
-    margin-bottom: 25px;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: all 0.35s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
 }
 
 body.light .project {
     background: #e2e8f0;
 }
 
+.project::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(56,189,248,0.06),
+        transparent,
+        rgba(14,165,233,0.04)
+    );
+    pointer-events: none;
+}
+
 .project:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
-.project h3 {
-    margin-bottom: 15px;
-    color: #38bdf8;
-}
-
-.project ul {
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-.project li {
-    margin-bottom: 8px;
-}
-
-/* Featured Terraform + Jenkins Project */
+/* Featured Projects */
 
 .featured-project {
     border: 1px solid rgba(56, 189, 248, 0.35);
     background:
-        linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(30, 41, 59, 0.95)),
+        linear-gradient(
+            135deg,
+            rgba(56, 189, 248, 0.08),
+            rgba(30, 41, 59, 0.96)
+        ),
         #1e293b;
 }
 
 body.light .featured-project {
     background:
-        linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(226, 232, 240, 0.95)),
+        linear-gradient(
+            135deg,
+            rgba(56, 189, 248, 0.14),
+            rgba(226, 232, 240, 0.96)
+        ),
         #e2e8f0;
 }
+
+.featured-project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 40px rgba(56, 189, 248, 0.18);
+    border-color: rgba(56, 189, 248, 0.55);
+}
+
+/* Project Heading */
+
+.project h3 {
+    margin-bottom: 18px;
+    color: #38bdf8;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.4;
+}
+
+/* Project Description */
+
+.project p {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+body.light .project p {
+    color: #334155;
+}
+
+/* Project List */
+
+.project ul {
+    padding-left: 22px;
+    margin-top: 15px;
+}
+
+.project li {
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+body.light .project li {
+    color: #334155;
+}
+
+/* Project Tags */
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 18px;
+    gap: 12px;
+    margin-top: 22px;
 }
 
 .project-tags span {
     background: rgba(56, 189, 248, 0.12);
     color: #38bdf8;
     border: 1px solid rgba(56, 189, 248, 0.35);
-    padding: 6px 12px;
+    padding: 7px 14px;
     border-radius: 999px;
     font-size: 13px;
     font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.project-tags span:hover {
+    background: #38bdf8;
+    color: #020617;
+    transform: scale(1.05);
 }
 
 body.light .project-tags span {
@@ -421,27 +460,35 @@ body.light .project-tags span {
     border-color: rgba(14, 165, 233, 0.35);
 }
 
+/* Project Links */
+
 .project-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 22px;
+    gap: 14px;
+    margin-top: 28px;
 }
 
+/* Buttons */
+
 .project-btn {
-    display: inline-block;
-    padding: 10px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 24px;
     background: #38bdf8;
     color: #020617;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 700;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    min-width: 140px;
 }
 
 .project-btn:hover {
     background: #0ea5e9;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(56,189,248,0.3);
 }
 
 .secondary-project-btn {
@@ -453,97 +500,6 @@ body.light .project-tags span {
 .secondary-project-btn:hover {
     background: #38bdf8;
     color: #020617;
-}
-
-/* ========================= */
-/* GitHub Stats */
-/* ========================= */
-
-.stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.stats img {
-    width: 48%;
-    border-radius: 16px;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
-
-.stats img:hover {
-    transform: translateY(-5px);
-}
-
-/* ========================= */
-/* Contribution Snake */
-/* ========================= */
-
-.snake {
-    margin-top: 30px;
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 16px;
-    overflow-x: auto;
-}
-
-body.light .snake {
-    background: #e2e8f0;
-}
-
-.snake img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-/* ========================= */
-/* Resume Section */
-/* ========================= */
-
-.resume-card {
-    background: #1e293b;
-    padding: 40px 20px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
-
-body.light .resume-card {
-    background: #e2e8f0;
-}
-
-.resume-card p {
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #cbd5e1;
-}
-
-body.light .resume-card p {
-    color: #334155;
-}
-
-.resume-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* ========================= */
-/* Email */
-/* ========================= */
-
-.email {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.email:hover {
-    color: #0ea5e9;
 }
 
 /* ========================= */
@@ -606,32 +562,28 @@ body.light footer {
         padding: 20px;
     }
 
-    .stats {
-        flex-direction: column;
+    .project {
+        padding: 24px;
     }
 
-    .stats img {
-        width: 100%;
-    }
-
-    .badges img {
-        width: 100%;
-        max-width: 320px;
-    }
-
-    .resume-buttons {
-        flex-direction: column;
-        align-items: center;
+    .project h3 {
+        font-size: 1.2rem;
     }
 
     .project-links {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .project-btn {
         width: 100%;
-        text-align: center;
     }
 
+    .project-tags {
+        gap: 10px;
+    }
+
+    .project-tags span {
+        font-size: 12px;
+    }
 }

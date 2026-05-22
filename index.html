@@ -243,15 +243,16 @@
 
     <h2>🛠️ Projects</h2>
 
+    <!-- Project 1 -->
     <div class="project featured-project">
 
       <h3>🏗️ AWS Infrastructure Automation with Terraform and Jenkins</h3>
 
       <p>
         Automated AWS infrastructure provisioning using Terraform and Jenkins.
-        Jenkins pulls code from GitHub, runs Terraform validation, creates an
-        execution plan, applies infrastructure changes, and uses an S3 backend
-        for remote Terraform state.
+        Jenkins pulls code from GitHub, validates Terraform configuration,
+        generates execution plans, applies infrastructure changes, and stores
+        Terraform state remotely using an S3 backend.
       </p>
 
       <ul>
@@ -260,6 +261,7 @@
         <li>Built Jenkins deploy and destroy pipelines</li>
         <li>Created VPC, EC2, S3, route tables, and internet gateway</li>
         <li>Optimized dev infrastructure to reduce AWS cost</li>
+        <li>Resolved real-world Jenkins disk-space and provider issues</li>
       </ul>
 
       <div class="project-tags">
@@ -273,6 +275,7 @@
       </div>
 
       <div class="project-links">
+
         <a
           href="https://github.com/deepakkine/aws-terraform-jenkins-infra/tree/dev"
           target="_blank"
@@ -286,10 +289,63 @@
           class="project-btn secondary-project-btn">
           Case Study
         </a>
+
       </div>
 
     </div>
 
+    <!-- Project 2 -->
+    <div class="project featured-project">
+
+      <h3>🚀 GitOps Deployment on AWS EKS using ArgoCD</h3>
+
+      <p>
+        Built a complete GitOps-based Kubernetes deployment workflow
+        using AWS EKS, ArgoCD, Docker, GitHub Actions, and Amazon ECR.
+        Automated application delivery and Kubernetes synchronization
+        using declarative deployment practices.
+      </p>
+
+      <ul>
+        <li>Implemented GitOps workflow using ArgoCD</li>
+        <li>Automated Kubernetes deployments using GitHub Actions</li>
+        <li>Built and pushed Docker images to Amazon ECR</li>
+        <li>Managed Kubernetes manifests declaratively</li>
+        <li>Configured Kubernetes services and ingress</li>
+        <li>Enabled automatic sync and rollback capability</li>
+      </ul>
+
+      <div class="project-tags">
+        <span>AWS EKS</span>
+        <span>Kubernetes</span>
+        <span>ArgoCD</span>
+        <span>GitHub Actions</span>
+        <span>Docker</span>
+        <span>Amazon ECR</span>
+        <span>GitOps</span>
+      </div>
+
+      <div class="project-links">
+
+        <a
+          href="https://github.com/deepakkine/devops-eks-argocd-assignment"
+          target="_blank"
+          class="project-btn">
+          View Code
+        </a>
+
+        <a
+          href="https://github.com/deepakkine/devops-eks-argocd-assignment/blob/main/README.md"
+          target="_blank"
+          class="project-btn secondary-project-btn">
+          Case Study
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Project 3 -->
     <div class="project">
 
       <h3>🚀 APIX (APISecurist)</h3>
@@ -300,22 +356,50 @@
       </p>
 
       <ul>
-        <li>Docker & Kubernetes</li>
-        <li>GitHub Actions CI/CD</li>
-        <li>Terraform & Ansible</li>
-        <li>Prometheus & Grafana</li>
-        <li>Trivy & SonarQube</li>
+        <li>Docker & Kubernetes container orchestration</li>
+        <li>GitHub Actions CI/CD automation</li>
+        <li>Terraform & Ansible infrastructure automation</li>
+        <li>Prometheus & Grafana monitoring</li>
+        <li>Trivy & SonarQube security scanning</li>
       </ul>
+
+      <div class="project-tags">
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>GitHub Actions</span>
+        <span>Terraform</span>
+        <span>Prometheus</span>
+        <span>Grafana</span>
+      </div>
 
     </div>
 
+    <!-- Project 4 -->
     <div class="project">
 
       <h3>☁️ AWS Three-Tier Architecture</h3>
 
       <p>
-        Highly available AWS architecture using EC2, ASG, RDS, ALB, and VPC.
+        Designed and deployed a scalable and highly available
+        AWS three-tier architecture using EC2, ALB, RDS,
+        Auto Scaling Groups, and VPC networking.
       </p>
+
+      <ul>
+        <li>Implemented scalable application architecture</li>
+        <li>Configured secure VPC networking</li>
+        <li>Integrated EC2, ALB, and RDS services</li>
+        <li>Designed high availability setup</li>
+      </ul>
+
+      <div class="project-tags">
+        <span>AWS</span>
+        <span>EC2</span>
+        <span>RDS</span>
+        <span>ALB</span>
+        <span>Auto Scaling</span>
+        <span>VPC</span>
+      </div>
 
     </div>
 
