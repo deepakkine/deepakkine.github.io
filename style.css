@@ -503,6 +503,59 @@ body.light .project-tags span {
 }
 
 /* ========================= */
+/* Contact Section Buttons */
+/* ========================= */
+
+.contact-buttons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Style for both Email Link and Phone Button */
+.email, .phone-btn {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Reusing your signature hover underline effect */
+.email::after, .phone-btn::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease;
+}
+
+.email:hover::after, .phone-btn:hover::after {
+    width: 100%;
+}
+
+.email:hover, .phone-btn:hover {
+    color: #0ea5e9;
+}
+
+/* Light mode support adapting to your slate theme colors */
+body.light .email, body.light .phone-btn {
+    color: #0369a1;
+}
+body.light .email::after, body.light .phone-btn::after {
+    background: #0369a1;
+}
+body.light .email:hover, body.light .phone-btn:hover {
+    color: #0ea5e9;
+}
+
+/* ========================= */
 /* Footer */
 /* ========================= */
 
