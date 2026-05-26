@@ -861,59 +861,6 @@ body.light .timeline-item p {
 }
 
 /* ========================= */
-/* Screenshots */
-/* ========================= */
-
-.screenshots-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(300px, 1fr));
-
-    gap: 24px;
-
-    margin-top: 40px;
-}
-
-.screenshots-grid img {
-
-    width: 100%;
-
-    border-radius: 20px;
-
-    transition: 0.35s ease;
-
-    border: 1px solid rgba(56,189,248,0.2);
-}
-
-.screenshots-grid img:hover {
-
-    transform: scale(1.03);
-
-    box-shadow:
-        0 10px 30px rgba(56,189,248,0.2);
-}
-
-/* ========================= */
-/* Premium Glassmorphism */
-/* ========================= */
-
-.project,
-.skill-card,
-.resume-card,
-.terminal {
-
-    backdrop-filter: blur(10px);
-
-    background:
-        rgba(30,41,59,0.78);
-
-    border:
-        1px solid rgba(255,255,255,0.08);
-}
-
-/* ========================= */
 /* Premium Hover Effects */
 /* ========================= */
 
