@@ -1013,3 +1013,54 @@ body.light .timeline-item p {
         color 0.3s ease,
         transform 0.3s ease;
 }
+/* ========================= */
+/* Featured Project */
+/* ========================= */
+
+.featured-project {
+  position: relative;
+  border: 2px solid rgba(56, 189, 248, 0.4);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #38bdf8;
+  color: #020617;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.project-highlights {
+  margin-top: 15px;
+}
+
+.project-highlights h4 {
+  margin-bottom: 10px;
+}
+
+.project-highlights ul {
+  padding-left: 20px;
+}
+
+.project-highlights li {
+  margin-bottom: 8px;
+}
+
+.project-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.project-metrics div {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  font-size: 14px;
+}
