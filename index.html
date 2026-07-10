@@ -1,805 +1,510 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Dipak Kine | DevOps Engineer</title>
-
-  <!-- SEO -->
-  <meta name="description"
-    content="Dipak Kine - DevOps Engineer Portfolio. AWS, Kubernetes, Docker, Terraform, CI/CD, GitHub Actions & Cloud Projects.">
-
-  <meta name="keywords"
-    content="DevOps Engineer, AWS, Kubernetes, Docker, Terraform, Jenkins, GitHub Actions, CI/CD, Linux, Prometheus, Grafana, ArgoCD, DevSecOps">
-
-  <meta name="author" content="Dipak Kine">
-
-  <meta property="og:title" content="Dipak Kine | DevOps Engineer">
-
-  <meta property="og:description"
-    content="AWS, Kubernetes, Terraform, GitHub Actions & DevOps Projects Portfolio">
-
-  <meta property="og:type" content="website">
-
-  <meta property="og:image"
-    content="https://opengraph.githubassets.com/1/deepakkine">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png"
-    href="./assets/favicon.png">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <!-- Typed JS -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dipak Kine | DevOps Engineer</title><link as="image" href="assets/images/profile/profile.webp" rel="preload"/>
+<!-- SEO -->
+<meta content="Dipak Kine - DevOps Engineer Portfolio. AWS, Kubernetes, Docker, Terraform, CI/CD, GitHub Actions &amp; Cloud Projects." name="description"/>
+<meta content="DevOps Engineer, AWS, Kubernetes, Docker, Terraform, Jenkins, GitHub Actions, CI/CD, Linux, Prometheus, Grafana, ArgoCD, DevSecOps" name="keywords"/>
+<meta content="Dipak Kine" name="author"/>
+<meta content="Dipak Kine | DevOps Engineer" property="og:title"/>
+<meta content="AWS, Kubernetes, Terraform, GitHub Actions &amp; DevOps Projects Portfolio" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://opengraph.githubassets.com/1/deepakkine" property="og:image"/>
+<!-- Favicon -->
+<link href="./assets/favicon.png" rel="icon" type="image/png"/>
+<!-- CSS -->
+<link href="style.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Typed JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+</link><link href="https://cdnjs.cloudflare.com" rel="preconnect"/><link href="https://cdn.jsdelivr.net" rel="preconnect"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dipak Kine","url":"https://deepakkine.github.io","jobTitle":"DevOps Engineer"}</script></head>
 <body>
-
-  <!-- Animated Background -->
-  <div class="animated-bg"></div>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-
-    <div class="container nav-container">
-
-      <!-- Left -->
-      <div class="logo-container">
-
-        <img
-          src="./assets/favicon.png"
-          alt="Dipak DevOps Logo"
-          class="site-logo">
-
-        <h2 class="logo">
+<!-- Animated Background -->
+<div class="animated-bg"></div>
+<!-- Navbar -->
+<nav class="navbar">
+<div class="container nav-container">
+<!-- Left -->
+<div class="logo-container">
+<img alt="Dipak DevOps Logo" class="site-logo" decoding="async" loading="lazy" src="./assets/favicon.png"/>
+<h2 class="logo">
           &lt;DipakDevOps/&gt;
         </h2>
-
-      </div>
-
-      <!-- Center -->
-      <ul class="nav-links" id="navLinks">
-
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#security">Security</a></li>
-        <li><a href="#github">GitHub</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-      <!-- Right -->
-      <button class="theme-toggle" onclick="toggleTheme()">
+</div>
+<!-- Center -->
+<ul class="nav-links" id="navLinks">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<!-- Right -->
+<button class="theme-toggle" onclick="toggleTheme()">
         🌙
       </button>
-
-    </div>
-
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero">
-
-    <div class="container">
-
-      <h1>
+</div>
+</nav>
+<!-- Hero -->
+<header class="hero">
+<div class="container">
+<h1>
         👨‍💻 Hi, I'm
         <span class="highlight">Dipak Kine</span>
-      </h1>
-
-      <p>
-        <span id="typing"></span>
-      </p>
-
-      <!-- Animated DevOps Avatar -->
-      <div class="hero-avatar">
-          <div class="avatar-ring"></div>
-          <img
-              src="assets/images/profile/profile.png"
-              alt="Dipak Kine"
-              class="avatar-img">
-      </div>
-      <!-- Terminal -->
-      <div class="terminal">
-
-        <p><span class="green">$</span> whoami</p>
-        <p>Dipak Kine</p>
-
-        <p><span class="green">$</span> role</p>
-        <p>DevOps Engineer</p>
-
-        <p><span class="green">$</span> skills</p>
-        <p>AWS Kubernetes Docker Terraform CI/CD</p>
-
-        <p><span class="green">$</span> status</p>
-        <p class="open">Open to DevOps Opportunities 🚀</p>
-
-      </div>
-
-      <div class="socials">
-
-        <a href="https://github.com/deepakkine" target="_blank">
+</h1>
+<p>
+<span id="typing"></span>
+</p>
+<!-- Animated DevOps Avatar -->
+<div class="hero-avatar">
+<div class="avatar-ring"></div>
+<img alt="Dipak Kine" class="avatar-img" decoding="async" fetchpriority="high" height="220" src="assets/images/profile/profile.webp" width="220"/>
+</div>
+<!-- Terminal -->
+<div class="terminal">
+<p><span class="green">$</span> whoami</p>
+<p>Dipak Kine</p>
+<p><span class="green">$</span> role</p>
+<p>DevOps Engineer</p>
+<p><span class="green">$</span> skills</p>
+<p>AWS Kubernetes Docker Terraform CI/CD</p>
+<p><span class="green">$</span> status</p>
+<p class="open">Open to DevOps Opportunities 🚀</p>
+</div>
+<div class="socials">
+<a href="https://github.com/deepakkine" target="_blank">
           GitHub
         </a>
-
-        <a href="https://www.linkedin.com/in/dipak-k-903a343b9/"
-          target="_blank">
+<a href="https://www.linkedin.com/in/dipak-k-903a343b9/" target="_blank">
           LinkedIn
         </a>
-
-      </div>
-
-      <!-- CI/CD Badge -->
-      <div class="pipeline-badge">
-
-        <img
-          src="https://img.shields.io/github/actions/workflow/status/deepakkine/deepakkine.github.io/pages/pages-build-deployment?style=for-the-badge&label=Portfolio%20Deployment"
-        />
-
-      </div>
-
-      <a href="./Dipak_Kine_DevOps_Engineer.pdf"
-        class="cta"
-        download>
+</div>
+<!-- CI/CD Badge -->
+<div class="pipeline-badge">
+<img decoding="async" loading="lazy" src="https://img.shields.io/github/actions/workflow/status/deepakkine/deepakkine.github.io/pages/pages-build-deployment?style=for-the-badge&amp;label=Portfolio%20Deployment">
+</img></div>
+<a class="cta" download="" href="./Dipak_Kine_DevOps_Engineer.pdf">
         Download Resume
       </a>
-
-    </div>
-
-  </header>
-
-  <!-- About -->
-  <section class="section" id="about">
-
-    <div class="container">
-
-      <h2>🙋 About Me</h2>
-
-      <p>
+</div>
+</header>
+<!-- About -->
+<section class="section" id="about">
+<div class="container">
+<h2>🙋 About Me</h2>
+<p>
         DevOps Engineer with 3+ years of experience in CI/CD pipeline automation,
         cloud infrastructure management, container orchestration, and AWS cloud
         services. Skilled in Kubernetes, Terraform, Docker, GitHub Actions,
         Jenkins, Linux, Prometheus, and Grafana.
       </p>
-
-    </div>
-
-  </section>
-
-  <!-- Skills -->
-  <section class="section" id="skills">
-
-    <div class="container">
-
-      <h2>🚀 Tech Stack</h2>
-
-      <div class="skill-grid">
-
-        <div class="skill-card">
-          <i class="fab fa-docker"></i>
-          <span>Docker</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-dharmachakra"></i>
-          <span>Kubernetes</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-aws"></i>
-          <span>AWS</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-code-branch"></i>
-          <span>Terraform</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-github"></i>
-          <span>GitHub Actions</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-jenkins"></i>
-          <span>Jenkins</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-linux"></i>
-          <span>Linux</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-chart-line"></i>
-          <span>Grafana</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- DevOps Badges -->
-  <section class="section" id="badges">
-
-    <div class="container">
-
-      <h2>🏷️ DevOps Tools</h2>
-
-      <div class="badges">
-
-        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white">
-
-        <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-
-        <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Grafana-F473B6?style=for-the-badge&logo=grafana&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Trivy-FF5733?style=for-the-badge&logo=trivy&logoColor=white">
-
-        <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white">
-
-        <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white">
-
-      </div>
-
-    </div>
-
-  </section>
-
+</div>
+</section>
+<!-- Skills -->
+<section class="section" id="skills">
+<div class="container">
+<h2>🚀 Tech Stack</h2>
+<div class="skill-grid">
+<div class="skill-card">
+<i class="fab fa-docker"></i>
+<span>Docker</span>
+</div>
+<div class="skill-card">
+<i class="fas fa-dharmachakra"></i>
+<span>Kubernetes</span>
+</div>
+<div class="skill-card">
+<i class="fab fa-aws"></i>
+<span>AWS</span>
+</div>
+<div class="skill-card">
+<i class="fas fa-code-branch"></i>
+<span>Terraform</span>
+</div>
+<div class="skill-card">
+<i class="fab fa-github"></i>
+<span>GitHub Actions</span>
+</div>
+<div class="skill-card">
+<i class="fab fa-jenkins"></i>
+<span>Jenkins</span>
+</div>
+<div class="skill-card">
+<i class="fab fa-linux"></i>
+<span>Linux</span>
+</div>
+<div class="skill-card">
+<i class="fas fa-chart-line"></i>
+<span>Grafana</span>
+</div>
+</div>
+</div>
+</section>
+<!-- DevOps Badges -->
+<section class="section" id="badges">
+<div class="container">
+<h2>🏷️ DevOps Tools</h2>
+<div class="badges">
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&amp;logo=amazonaws&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&amp;logo=terraform&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&amp;logo=jenkins&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&amp;logo=github-actions&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&amp;logo=prometheus&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Grafana-F473B6?style=for-the-badge&amp;logo=grafana&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Trivy-FF5733?style=for-the-badge&amp;logo=trivy&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&amp;logo=sonarqube&amp;logoColor=white"/>
+<img decoding="async" loading="lazy" src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&amp;logo=ansible&amp;logoColor=white"/>
+</div>
+</div>
+</section>
 <!-- Projects -->
 <section class="section" id="projects">
-
-  <div class="container">
-
-    <h2>🛠️ Projects</h2>
-
-    <!-- Project 1 -->
+<div class="container">
+<h2>🛠️ Projects</h2>
+<!-- Project 1 -->
 <div class="project featured-project">
-
-  <div class="featured-badge">
+<div class="featured-badge">
     🏆 Featured Project
   </div>
-
-  <h3>🚀 Production-Ready AWS Three-Tier DevSecOps Platform</h3>
-
-  <p>
+<h3>🚀 Production-Ready AWS Three-Tier DevSecOps Platform</h3>
+<p>
     Designed and implemented a production-ready cloud-native three-tier
     application platform on AWS using Infrastructure as Code,
     Kubernetes and DevSecOps best practices.
   </p>
-
-  <div class="architecture-image">
-
-    <img
-      src="./assets/images/architecture/aws-three-tier-devsecops-platform.png"
-      alt="AWS Three-Tier DevSecOps Platform Architecture">
-
-  </div>
-
-  <p>
+<div class="architecture-image">
+<img alt="AWS Three-Tier DevSecOps Platform Architecture" decoding="async" loading="lazy" src="./assets/images/architecture/aws-three-tier-devsecops-platform.webp"/>
+</div>
+<p>
 
     Automated the complete deployment lifecycle from infrastructure
     provisioning to Kubernetes application deployment using
     Terraform, GitHub Actions, Helm and Amazon EKS.
 
   </p>
-
-  <div class="project-highlights">
-
-    <h4>Key Achievements</h4>
-
-    <ul>
-
-      <li>Provisioned AWS infrastructure using reusable Terraform modules</li>
-
-      <li>Configured GitHub OIDC authentication (No AWS Access Keys)</li>
-
-      <li>Built Amazon EKS Cluster with Managed Node Groups</li>
-
-      <li>Implemented GitHub Actions CI/CD Pipeline</li>
-
-      <li>Containerized React and Node.js applications using Docker</li>
-
-      <li>Published images to Amazon ECR</li>
-
-      <li>Deployed workloads using reusable Helm Charts</li>
-
-      <li>Configured NGINX Ingress Controller</li>
-
-      <li>Automated HTTPS using cert-manager and Let's Encrypt</li>
-
-      <li>Integrated Prometheus, Grafana and Alertmanager</li>
-
-      <li>Implemented Trivy filesystem and image security scanning</li>
-
-      <li>Documented deployment architecture and troubleshooting guide</li>
-
-    </ul>
-
-  </div>
-
-  <div class="project-tags">
-
-    <span>AWS</span>
-
-    <span>Terraform</span>
-
-    <span>EKS</span>
-
-    <span>Docker</span>
-
-    <span>Kubernetes</span>
-
-    <span>GitHub Actions</span>
-
-    <span>GitHub OIDC</span>
-
-    <span>Helm</span>
-
-    <span>ECR</span>
-
-    <span>NGINX</span>
-
-    <span>Prometheus</span>
-
-    <span>Grafana</span>
-
-    <span>Trivy</span>
-
-    <span>DevSecOps</span>
-
-  </div>
-
-  <div class="project-metrics">
-
-    <div>☁️ AWS Infrastructure</div>
-
-    <div>☸️ Amazon EKS</div>
-
-    <div>🚀 CI/CD Pipeline</div>
-
-    <div>🔒 DevSecOps</div>
-
-    <div>📊 Monitoring</div>
-
-    <div>🔐 HTTPS Automation</div>
-
-  </div>
-
-  <div class="project-links">
-
-    <a
-      href="https://github.com/deepakkine/aws-three-tier-devsecops-platform"
-      target="_blank"
-      class="project-btn">
-
-      <i class="fab fa-github"></i> View Code
+<div class="project-highlights">
+<h4>Key Achievements</h4>
+<ul>
+<li>Provisioned AWS infrastructure using reusable Terraform modules</li>
+<li>Configured GitHub OIDC authentication (No AWS Access Keys)</li>
+<li>Built Amazon EKS Cluster with Managed Node Groups</li>
+<li>Implemented GitHub Actions CI/CD Pipeline</li>
+<li>Containerized React and Node.js applications using Docker</li>
+<li>Published images to Amazon ECR</li>
+<li>Deployed workloads using reusable Helm Charts</li>
+<li>Configured NGINX Ingress Controller</li>
+<li>Automated HTTPS using cert-manager and Let's Encrypt</li>
+<li>Integrated Prometheus, Grafana and Alertmanager</li>
+<li>Implemented Trivy filesystem and image security scanning</li>
+<li>Documented deployment architecture and troubleshooting guide</li>
+</ul>
+</div>
+<div class="project-tags">
+<span>AWS</span>
+<span>Terraform</span>
+<span>EKS</span>
+<span>Docker</span>
+<span>Kubernetes</span>
+<span>GitHub Actions</span>
+<span>GitHub OIDC</span>
+<span>Helm</span>
+<span>ECR</span>
+<span>NGINX</span>
+<span>Prometheus</span>
+<span>Grafana</span>
+<span>Trivy</span>
+<span>DevSecOps</span>
+</div>
+<div class="project-metrics">
+<div>☁️ AWS Infrastructure</div>
+<div>☸️ Amazon EKS</div>
+<div>🚀 CI/CD Pipeline</div>
+<div>🔒 DevSecOps</div>
+<div>📊 Monitoring</div>
+<div>🔐 HTTPS Automation</div>
+</div>
+<div class="project-links">
+<a class="project-btn" href="https://github.com/deepakkine/aws-three-tier-devsecops-platform" target="_blank">
+<i class="fab fa-github"></i> View Code
 
     </a>
-
-    <a
-      href="https://github.com/deepakkine/aws-three-tier-devsecops-platform/blob/main/README.md"
-      target="_blank"
-      class="project-btn secondary-project-btn">
+<a class="project-btn secondary-project-btn" href="https://github.com/deepakkine/aws-three-tier-devsecops-platform/blob/main/README.md" target="_blank">
 
       📖 Documentation
 
     </a>
-
-  </div>
-
 </div>
-
-    <!-- Project 2 -->
-    <div class="project featured-project">
-
-      <h3>🏗️ AWS Infrastructure Automation with Terraform and Jenkins</h3>
-
-      <p>
+</div>
+<!-- Project 2 -->
+<div class="project featured-project">
+<h3>🏗️ AWS Infrastructure Automation with Terraform and Jenkins</h3>
+<p>
         Automated AWS infrastructure provisioning using Terraform and Jenkins.
         Jenkins pulls code from GitHub, validates Terraform configuration,
         generates execution plans, applies infrastructure changes, and stores
         Terraform state remotely using an S3 backend.
       </p>
-
-      <div class="architecture-image">
-
-        <img
-          src="./assets/images/architecture/three-tier-architecture.png"
-          alt="AWS Terraform Jenkins Architecture Diagram">
-
-      </div>
-
-      <ul>
-        <li>Provisioned AWS resources using Terraform modules</li>
-        <li>Configured S3 remote backend for Terraform state management</li>
-        <li>Built Jenkins deploy and destroy pipelines</li>
-        <li>Created VPC, EC2, S3, route tables, and internet gateway</li>
-        <li>Optimized dev infrastructure to reduce AWS cost</li>
-        <li>Resolved real-world Jenkins disk-space and provider issues</li>
-      </ul>
-
-      <div class="project-tags">
-        <span>AWS</span>
-        <span>Terraform</span>
-        <span>Jenkins</span>
-        <span>GitHub</span>
-        <span>S3 Backend</span>
-        <span>EC2</span>
-        <span>VPC</span>
-      </div>
-
-      <div class="project-links">
-
-        <a
-          href="https://github.com/deepakkine/aws-terraform-jenkins-infra/tree/dev"
-          target="_blank"
-          class="project-btn">
+<div class="architecture-image">
+<img alt="AWS Terraform Jenkins Architecture Diagram" decoding="async" loading="lazy" src="./assets/images/architecture/three-tier-architecture.webp"/>
+</div>
+<ul>
+<li>Provisioned AWS resources using Terraform modules</li>
+<li>Configured S3 remote backend for Terraform state management</li>
+<li>Built Jenkins deploy and destroy pipelines</li>
+<li>Created VPC, EC2, S3, route tables, and internet gateway</li>
+<li>Optimized dev infrastructure to reduce AWS cost</li>
+<li>Resolved real-world Jenkins disk-space and provider issues</li>
+</ul>
+<div class="project-tags">
+<span>AWS</span>
+<span>Terraform</span>
+<span>Jenkins</span>
+<span>GitHub</span>
+<span>S3 Backend</span>
+<span>EC2</span>
+<span>VPC</span>
+</div>
+<div class="project-links">
+<a class="project-btn" href="https://github.com/deepakkine/aws-terraform-jenkins-infra/tree/dev" target="_blank">
           View Code
         </a>
-
-        <a
-          href="https://github.com/deepakkine/aws-terraform-jenkins-infra/blob/dev/README.md"
-          target="_blank"
-          class="project-btn secondary-project-btn">
+<a class="project-btn secondary-project-btn" href="https://github.com/deepakkine/aws-terraform-jenkins-infra/blob/dev/README.md" target="_blank">
           GitHub README
         </a>
-
-        <a
-          href="./case-studies/Aws-infra-terraform-jenkins-Portfolio.pdf"
-          target="_blank"
-          class="project-btn secondary-project-btn">
+<a class="project-btn secondary-project-btn" href="./case-studies/Aws-infra-terraform-jenkins-Portfolio.pdf" target="_blank">
           View Case Study
         </a>
-
-      </div>
-
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project featured-project">
-
-      <h3>🚀 GitOps Deployment on AWS EKS using ArgoCD</h3>
-
-      <p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project featured-project">
+<h3>🚀 GitOps Deployment on AWS EKS using ArgoCD</h3>
+<p>
         Built a complete GitOps-based Kubernetes deployment workflow
         using AWS EKS, ArgoCD, Docker, GitHub Actions, and Amazon ECR.
         Automated application delivery and Kubernetes synchronization
         using declarative deployment practices.
       </p>
-
-      <div class="architecture-image">
-
-        <img
-          src="./assets/images/architecture/cloud-native-devops-architecture.png"
-          alt="GitOps EKS ArgoCD Architecture Diagram">
-
-      </div>
-
-      <ul>
-        <li>Implemented GitOps workflow using ArgoCD</li>
-        <li>Automated Kubernetes deployments using GitHub Actions</li>
-        <li>Built and pushed Docker images to Amazon ECR</li>
-        <li>Managed Kubernetes manifests declaratively</li>
-        <li>Configured Kubernetes services and ingress</li>
-        <li>Enabled automatic sync and rollback capability</li>
-      </ul>
-
-      <div class="project-tags">
-        <span>AWS EKS</span>
-        <span>Kubernetes</span>
-        <span>ArgoCD</span>
-        <span>GitHub Actions</span>
-        <span>Docker</span>
-        <span>Amazon ECR</span>
-        <span>GitOps</span>
-      </div>
-
-      <div class="project-links">
-
-        <a
-          href="https://github.com/deepakkine/devops-eks-argocd-assignment"
-          target="_blank"
-          class="project-btn">
+<div class="architecture-image">
+<img alt="GitOps EKS ArgoCD Architecture Diagram" decoding="async" loading="lazy" src="./assets/images/architecture/cloud-native-devops-architecture.webp"/>
+</div>
+<ul>
+<li>Implemented GitOps workflow using ArgoCD</li>
+<li>Automated Kubernetes deployments using GitHub Actions</li>
+<li>Built and pushed Docker images to Amazon ECR</li>
+<li>Managed Kubernetes manifests declaratively</li>
+<li>Configured Kubernetes services and ingress</li>
+<li>Enabled automatic sync and rollback capability</li>
+</ul>
+<div class="project-tags">
+<span>AWS EKS</span>
+<span>Kubernetes</span>
+<span>ArgoCD</span>
+<span>GitHub Actions</span>
+<span>Docker</span>
+<span>Amazon ECR</span>
+<span>GitOps</span>
+</div>
+<div class="project-links">
+<a class="project-btn" href="https://github.com/deepakkine/devops-eks-argocd-assignment" target="_blank">
           View Code
         </a>
-
-        <a
-          href="https://github.com/deepakkine/devops-eks-argocd-assignment/blob/main/README.md"
-          target="_blank"
-          class="project-btn secondary-project-btn">
+<a class="project-btn secondary-project-btn" href="https://github.com/deepakkine/devops-eks-argocd-assignment/blob/main/README.md" target="_blank">
           Case Study
         </a>
-
-      </div>
-
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project">
-
-      <h3>🚀 APIX (APISecurist)</h3>
-
-      <p>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project">
+<h3>🚀 APIX (APISecurist)</h3>
+<p>
         Cloud-native Kubernetes deployment with CI/CD, monitoring,
         security scanning, and AWS integration.
       </p>
-
-      <ul>
-        <li>Docker & Kubernetes container orchestration</li>
-        <li>GitHub Actions CI/CD automation</li>
-        <li>Terraform & Ansible infrastructure automation</li>
-        <li>Prometheus & Grafana monitoring</li>
-        <li>Trivy & SonarQube security scanning</li>
-      </ul>
-
-      <div class="project-tags">
-        <span>Docker</span>
-        <span>Kubernetes</span>
-        <span>GitHub Actions</span>
-        <span>Terraform</span>
-        <span>Prometheus</span>
-        <span>Grafana</span>
-      </div>
-
-    </div>
-
-    <!-- Project 5 -->
-    <div class="project">
-
-      <h3>☁️ AWS Three-Tier Architecture</h3>
-
-      <p>
+<ul>
+<li>Docker &amp; Kubernetes container orchestration</li>
+<li>GitHub Actions CI/CD automation</li>
+<li>Terraform &amp; Ansible infrastructure automation</li>
+<li>Prometheus &amp; Grafana monitoring</li>
+<li>Trivy &amp; SonarQube security scanning</li>
+</ul>
+<div class="project-tags">
+<span>Docker</span>
+<span>Kubernetes</span>
+<span>GitHub Actions</span>
+<span>Terraform</span>
+<span>Prometheus</span>
+<span>Grafana</span>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="project">
+<h3>☁️ AWS Three-Tier Architecture</h3>
+<p>
         Designed and deployed a scalable and highly available
         AWS three-tier architecture using EC2, ALB, RDS,
         Auto Scaling Groups, and VPC networking.
       </p>
-
-      <div class="architecture-image">
-
-        <img
-          src="./assets/images/architecture/aws-three-tier-web-architecture.png"
-          alt="AWS Three-Tier Web Architecture Diagram">
-
-      </div>
-
-      <ul>
-        <li>Implemented scalable application architecture</li>
-        <li>Configured secure VPC networking</li>
-        <li>Integrated EC2, ALB, and RDS services</li>
-        <li>Designed high availability setup</li>
-      </ul>
-
-      <div class="project-tags">
-        <span>AWS</span>
-        <span>EC2</span>
-        <span>RDS</span>
-        <span>ALB</span>
-        <span>Auto Scaling</span>
-        <span>VPC</span>
-      </div>
-
-    </div>
-
-    <!-- Project 6 -->
-    <div class="project featured-project">
-
-      <div class="featured-badge">
+<div class="architecture-image">
+<img alt="AWS Three-Tier Web Architecture Diagram" decoding="async" loading="lazy" src="./assets/images/architecture/aws-three-tier-web-architecture.webp"/>
+</div>
+<ul>
+<li>Implemented scalable application architecture</li>
+<li>Configured secure VPC networking</li>
+<li>Integrated EC2, ALB, and RDS services</li>
+<li>Designed high availability setup</li>
+</ul>
+<div class="project-tags">
+<span>AWS</span>
+<span>EC2</span>
+<span>RDS</span>
+<span>ALB</span>
+<span>Auto Scaling</span>
+<span>VPC</span>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="project featured-project">
+<div class="featured-badge">
         ⭐ Featured Project
       </div>
-
-      <h3>🚀 End-to-End DevOps Automation on AWS EKS</h3>
-
-      <div class="architecture-image">
-        <img
-          src="./assets/images/architecture/End-to-end DevOps on AWS EKS.png"
-          alt="End-to-End DevOps Automation on AWS EKS Architecture Diagram">
-      </div>
-      <p>
+<h3>🚀 End-to-End DevOps Automation on AWS EKS</h3>
+<div class="architecture-image">
+<img alt="End-to-End DevOps Automation on AWS EKS Architecture Diagram" decoding="async" loading="lazy" src="./assets/images/architecture/End-to-end DevOps on AWS EKS.webp"/>
+</div>
+<p>
         Built a production-style cloud-native DevOps platform using
         Terraform, Amazon EKS, Docker, GitHub Actions, Amazon ECR,
         ArgoCD, Kubernetes, Trivy, ConfigMaps, Secrets, Persistent
         Volumes, and Horizontal Pod Autoscaling.
       </p>
-
-      <p>
+<p>
         Implemented Infrastructure as Code, CI/CD automation,
         container security scanning, GitOps deployment, and
         Kubernetes orchestration for a CodeIgniter-based
         E-Commerce application running on AWS.
       </p>
-
-      <div class="project-highlights">
-        <h4>Key Achievements</h4>
-        <ul>
-          <li>Provisioned complete AWS infrastructure using reusable Terraform modules</li>
-          <li>Created and managed Amazon EKS cluster and worker nodes</li>
-          <li>Implemented Docker multi-stage builds for optimized container images</li>
-          <li>Built automated CI/CD pipeline using GitHub Actions</li>
-          <li>Integrated Trivy vulnerability scanning for DevSecOps practices</li>
-          <li>Configured Amazon ECR for container image management</li>
-          <li>Implemented GitOps deployment workflow using ArgoCD</li>
-          <li>Configured Kubernetes Deployments, Services, HPA, PVC, ConfigMaps and Secrets</li>
-          <li>Troubleshot CrashLoopBackOff, Apache, PHP extensions, database connectivity and ArgoCD sync issues</li>
-          <li>Created detailed architecture diagrams, deployment guides and troubleshooting documentation</li>
-        </ul>
-      </div>
-
-      <div class="project-tags">
-        <span>AWS</span>
-        <span>Terraform</span>
-        <span>EKS</span>
-        <span>Kubernetes</span>
-        <span>Docker</span>
-        <span>GitHub Actions</span>
-        <span>ArgoCD</span>
-        <span>Amazon ECR</span>
-        <span>Trivy</span>
-        <span>GitOps</span>
-        <span>HPA</span>
-        <span>PVC</span>
-      </div>
-
-      <div class="project-metrics">
-        <div>☁️ AWS Infrastructure</div>
-        <div>☸️ Kubernetes Platform</div>
-        <div>🔄 GitOps Automation</div>
-        <div>🔒 DevSecOps Scanning</div>
-      </div>
-
-      <div class="project-links">
-
-        <a
-          href="https://github.com/deepakkine/aws-eks-gitops-devops-platform"
-          target="_blank"
-          class="project-btn">
-          <i class="fab fa-github"></i> View Code
+<div class="project-highlights">
+<h4>Key Achievements</h4>
+<ul>
+<li>Provisioned complete AWS infrastructure using reusable Terraform modules</li>
+<li>Created and managed Amazon EKS cluster and worker nodes</li>
+<li>Implemented Docker multi-stage builds for optimized container images</li>
+<li>Built automated CI/CD pipeline using GitHub Actions</li>
+<li>Integrated Trivy vulnerability scanning for DevSecOps practices</li>
+<li>Configured Amazon ECR for container image management</li>
+<li>Implemented GitOps deployment workflow using ArgoCD</li>
+<li>Configured Kubernetes Deployments, Services, HPA, PVC, ConfigMaps and Secrets</li>
+<li>Troubleshot CrashLoopBackOff, Apache, PHP extensions, database connectivity and ArgoCD sync issues</li>
+<li>Created detailed architecture diagrams, deployment guides and troubleshooting documentation</li>
+</ul>
+</div>
+<div class="project-tags">
+<span>AWS</span>
+<span>Terraform</span>
+<span>EKS</span>
+<span>Kubernetes</span>
+<span>Docker</span>
+<span>GitHub Actions</span>
+<span>ArgoCD</span>
+<span>Amazon ECR</span>
+<span>Trivy</span>
+<span>GitOps</span>
+<span>HPA</span>
+<span>PVC</span>
+</div>
+<div class="project-metrics">
+<div>☁️ AWS Infrastructure</div>
+<div>☸️ Kubernetes Platform</div>
+<div>🔄 GitOps Automation</div>
+<div>🔒 DevSecOps Scanning</div>
+</div>
+<div class="project-links">
+<a class="project-btn" href="https://github.com/deepakkine/aws-eks-gitops-devops-platform" target="_blank">
+<i class="fab fa-github"></i> View Code
         </a>
-
-        <a
-          href="https://github.com/deepakkine/aws-eks-gitops-devops-platform/blob/main/README.md"
-          target="_blank"
-          class="project-btn secondary-project-btn">
+<a class="project-btn secondary-project-btn" href="https://github.com/deepakkine/aws-eks-gitops-devops-platform/blob/main/README.md" target="_blank">
           📖 Case Study
         </a>
-
-      </div>
-
-    </div>
-  </div>
-
+</div>
+</div>
+</div>
 </section>
-
-  <!-- Security -->
-  <section class="section" id="security">
-
-    <div class="container">
-
-      <h2>🔐 DevSecOps & Security</h2>
-
-      <div class="project">
-
-        <h3>Security & Compliance</h3>
-
-        <ul>
-          <li>Container Security Scanning using Trivy</li>
-          <li>Static Code Analysis using SonarQube</li>
-          <li>AWS IAM Best Practices</li>
-          <li>Kubernetes RBAC Configuration</li>
-          <li>Docker Image Hardening</li>
-          <li>Infrastructure Security using Security Groups & NACLs</li>
-        </ul>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Optimization -->
-  <section class="section" id="optimization">
-
-    <div class="container">
-
-      <h2>💰 AWS Cost Optimization</h2>
-
-      <div class="project">
-
-        <h3>Cloud Cost Optimization Strategies</h3>
-
-        <ul>
-          <li>Auto shutdown/start EC2 using AWS Lambda</li>
-          <li>S3 Lifecycle Policies</li>
-          <li>CloudWatch Monitoring & Alerts</li>
-          <li>Auto Scaling Groups</li>
-          <li>Optimized EKS resource usage</li>
-        </ul>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Timeline -->
-  <section class="section" id="timeline">
-
-    <div class="container">
-
-      <h2>📈 DevOps Journey</h2>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-
-          <span>2024</span>
-
-          <h3>AWS Three-Tier Architecture</h3>
-
-          <p>
+<!-- Security -->
+<section class="section" id="security">
+<div class="container">
+<h2>🔐 DevSecOps &amp; Security</h2>
+<div class="project">
+<h3>Security &amp; Compliance</h3>
+<ul>
+<li>Container Security Scanning using Trivy</li>
+<li>Static Code Analysis using SonarQube</li>
+<li>AWS IAM Best Practices</li>
+<li>Kubernetes RBAC Configuration</li>
+<li>Docker Image Hardening</li>
+<li>Infrastructure Security using Security Groups &amp; NACLs</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Optimization -->
+<section class="section" id="optimization">
+<div class="container">
+<h2>💰 AWS Cost Optimization</h2>
+<div class="project">
+<h3>Cloud Cost Optimization Strategies</h3>
+<ul>
+<li>Auto shutdown/start EC2 using AWS Lambda</li>
+<li>S3 Lifecycle Policies</li>
+<li>CloudWatch Monitoring &amp; Alerts</li>
+<li>Auto Scaling Groups</li>
+<li>Optimized EKS resource usage</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Timeline -->
+<section class="section" id="timeline">
+<div class="container">
+<h2>📈 DevOps Journey</h2>
+<div class="timeline">
+<div class="timeline-item">
+<span>2024</span>
+<h3>AWS Three-Tier Architecture</h3>
+<p>
             Built scalable AWS infrastructure using EC2,
             RDS, ALB and Auto Scaling Groups.
           </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <span>2025</span>
-
-          <h3>Terraform & Jenkins Automation</h3>
-
-          <p>
+</div>
+<div class="timeline-item">
+<span>2025</span>
+<h3>Terraform &amp; Jenkins Automation</h3>
+<p>
             Automated AWS infrastructure provisioning
             and CI/CD deployment workflows.
           </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <span>2025</span>
-
-          <h3>GitOps on AWS EKS</h3>
-
-          <p>
+</div>
+<div class="timeline-item">
+<span>2025</span>
+<h3>GitOps on AWS EKS</h3>
+<p>
             Implemented GitOps deployment using
             Kubernetes, ArgoCD and GitHub Actions.
           </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-            <span>2026</span>
-
-            <h3>Production-Ready AWS Three-Tier DevSecOps Platform</h3>
-
-            <p>
+</div>
+<div class="timeline-item">
+<span>2026</span>
+<h3>Production-Ready AWS Three-Tier DevSecOps Platform</h3>
+<p>
 
                 Built an end-to-end AWS DevSecOps platform using
                 Terraform, Amazon EKS, GitHub Actions,
@@ -807,128 +512,73 @@
                 cert-manager and Let's Encrypt.
 
             </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <span>2026</span>
-
-          <h3>DevSecOps & Monitoring</h3>
-
-          <p>
+</div>
+<div class="timeline-item">
+<span>2026</span>
+<h3>DevSecOps &amp; Monitoring</h3>
+<p>
             Integrated Trivy, SonarQube,
             Prometheus and Grafana into CI/CD workflows.
           </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- GitHub -->
-  <section class="section" id="github">
-
-    <div class="container">
-
-      <h2>📊 GitHub Analytics</h2>
-
-      <div class="stats">
-
-        <img
-          src="https://github-readme-stats-sigma-five.vercel.app/api?username=deepakkine&show_icons=true&theme=tokyonight"
-          alt="GitHub Stats" />
-
-        <img
-          src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=deepakkine&layout=compact&theme=tokyonight"
-          alt="Top Languages" />
-
-      </div>
-
-      <br><br>
-
-      <h2>🐍 Contribution Snake</h2>
-
-      <div class="snake">
-
-        <img
-          src="https://raw.githubusercontent.com/deepakkine/deepakkine.github.io/output/github-contribution-grid-snake-dark.svg"
-          alt="GitHub Contribution Snake Animation" />
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Resume -->
-
+</div>
+</div>
+</div>
+</section>
+<!-- GitHub -->
+<section class="section" id="github">
+<div class="container">
+<h2>📊 GitHub Analytics</h2>
+<div class="stats">
+<img alt="GitHub Stats" decoding="async" loading="lazy" src="https://github-readme-stats-sigma-five.vercel.app/api?username=deepakkine&amp;show_icons=true&amp;theme=tokyonight">
+<img alt="Top Languages" decoding="async" loading="lazy" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=deepakkine&amp;layout=compact&amp;theme=tokyonight">
+</img></img></div>
+<br/><br/>
+<h2>🐍 Contribution Snake</h2>
+<div class="snake">
+<img alt="GitHub Contribution Snake Animation" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/deepakkine/deepakkine.github.io/output/github-contribution-grid-snake-dark.svg">
+</img></div>
+</div>
+</section>
+<!-- Resume -->
 <section class="section" id="resume">
-
-    <div class="container">
-
-        <h2>📄 Resume</h2>
-
-        <div class="resume-card">
-
-            <p>
+<div class="container">
+<h2>📄 Resume</h2>
+<div class="resume-card">
+<p>
                 Want to preview my complete DevOps resume?
             </p>
-
-            <div class="resume-buttons">
-
-                <a
-                    href="./Dipak_Kine_DevOps_Engineer.pdf"
-                    target="_blank"
-                    class="cta">
+<div class="resume-buttons">
+<a class="cta" href="./Dipak_Kine_DevOps_Engineer.pdf" target="_blank">
                     👀 Preview Resume
                 </a>
-
-                <a
-                    href="./Dipak_Kine_DevOps_Engineer.pdf"
-                    download
-                    class="cta secondary-btn">
+<a class="cta secondary-btn" download="" href="./Dipak_Kine_DevOps_Engineer.pdf">
                     ⬇ Download Resume
                 </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
+</div>
+</div>
+</div>
 </section>
-
-  <!-- Contact -->
+<!-- Contact -->
 <section class="section" id="contact">
-  <div class="container">
-    <h2>📬 Contact</h2>
-    <p>Email me for collaboration or opportunities:</p>
-
-    <div class="contact-buttons">
-      <a href="mailto:kinedipak97@gmail.com" class="email">
+<div class="container">
+<h2>📬 Contact</h2>
+<p>Email me for collaboration or opportunities:</p>
+<div class="contact-buttons">
+<a class="email" href="mailto:kinedipak97@gmail.com">
         kinedipak97@gmail.com
       </a>
-      
-      <a href="javascript:void(0);" 
-         class="phone-btn" 
-         onclick="this.innerHTML = '📞 +91 72648 32029'; this.style.cursor = 'default';">
+<a class="phone-btn" href="javascript:void(0);" onclick="this.innerHTML = '📞 +91 72648 32029'; this.style.cursor = 'default';">
          Show Phone Number
-      </a>  
-    </div>
-  </div>
+      </a>
+</div>
+</div>
 </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Dipak Kine | Built with DevOps ❤️</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
+<!-- Footer -->
+<footer>
+<p>© 2026 Dipak Kine | Built with DevOps ❤️</p>
+</footer>
+<!-- Scripts -->
+<script>
 
     // Theme Persistence
     const currentTheme = localStorage.getItem("theme");
@@ -958,8 +608,8 @@
         "CI/CD Automation Expert",
         "Docker & Terraform Specialist"
       ],
-      typeSpeed: 60,
-      backSpeed: 40,
+      typeSpeed: 100,
+      backSpeed: 50,
       loop: true
     });
 
@@ -969,7 +619,5 @@
     }
 
   </script>
-
 </body>
-
 </html>

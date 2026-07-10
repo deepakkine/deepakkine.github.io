@@ -203,7 +203,7 @@ body.light .hero {
 
 .hero h1 {
     font-size: 3.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero p {
@@ -688,15 +688,15 @@ body.light footer {
         width: 180px;
         height: 180px;
 
-        margin: 50px auto;
+        margin: 30px auto;
     }
 
     .avatar-ring {
 
         position: absolute;
 
-        width: 190px;
-        height: 190px;
+        width: 270px;
+        height: 270px;
 
         top: -5px;
         left: -5px;
@@ -758,9 +758,9 @@ body.light footer {
 
 .hero-avatar {
     position: relative;
-    width: 220px;
-    height: 220px;
-    margin: 50px auto;
+    width: 260px;
+    height: 260px;
+    margin: 30px auto;
 
     border-radius: 50%;
     overflow: hidden;
@@ -807,8 +807,8 @@ body.light footer {
 
     position: absolute;
 
-    width: 230px;
-    height: 230px;
+    width: 270px;
+    height: 270px;
 
     top: -5px;
     left: -5px;
