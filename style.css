@@ -51,7 +51,7 @@ body.light {
 
     background: rgba(2, 6, 23, 0.78);
 
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(6px);
 
     border-bottom: 1px solid rgba(255,255,255,0.06);
 
@@ -618,6 +618,10 @@ body.light footer {
 
 @media(max-width:768px) {
 
+    .hero {
+        padding: 120px 20px 60px;
+    }
+
     .hamburger {
         display: block;
     }
@@ -685,8 +689,8 @@ body.light footer {
 
         position: relative;
 
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
 
         margin: 30px auto;
     }
@@ -695,8 +699,8 @@ body.light footer {
 
         position: absolute;
 
-        width: 270px;
-        height: 270px;
+        width: 180px;
+        height: 180px;
 
         top: -5px;
         left: -5px;
@@ -738,7 +742,7 @@ body.light footer {
         rgba(14,165,233,0.1),
         transparent 25%);
 
-    animation: bgPulse 10s infinite alternate;
+    animation: bgPulse 30s ease-in-out infinite;
 }
 
 @keyframes bgPulse {
@@ -758,8 +762,8 @@ body.light footer {
 
 .hero-avatar {
     position: relative;
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
     margin: 30px auto;
 
     border-radius: 50%;
@@ -774,7 +778,7 @@ body.light footer {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    animation: float 4s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
 
     border: 4px solid rgba(56,189,248,.35);
 
@@ -799,7 +803,7 @@ body.light footer {
     box-shadow:
         0 0 25px rgba(56,189,248,.45),
         0 0 55px rgba(56,189,248,.30),
-        0 0 80px rgba(56,189,248,.18);
+        0 0 35px rgba(56,189,248,.18);
 
 }
 
@@ -807,8 +811,8 @@ body.light footer {
 
     position: absolute;
 
-    width: 270px;
-    height: 270px;
+    width: 230px;
+    height: 230px;
 
     top: -5px;
     left: -5px;
@@ -818,7 +822,7 @@ body.light footer {
     border-radius: 50%;
 
     animation:
-        spin 16s linear infinite,
+        spin 30s linear infinite,
         pulseRing 4s ease-in-out infinite;
 
 }
@@ -999,7 +1003,7 @@ body.light .timeline-item p {
     position: relative;
     overflow: hidden;
     text-align: center;
-    padding: 180px 20px 120px;
+    padding: 140px 20px 80px;
     background: linear-gradient(135deg,#020617,#0f172a,#1e293b);
 }
 
@@ -1021,17 +1025,7 @@ body.light .timeline-item p {
     transform: scale(1.03);
 }
 
-/* ========================= */
-/* Smooth Global Animation */
-/* ========================= */
 
-* {
-
-    transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease;
-}
 /* ========================= */
 /* Featured Project */
 /* ========================= */
